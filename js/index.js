@@ -21,3 +21,12 @@ stopLinks.addEventListener("click", (event) => {
   console.log("stopped")
 });//Stops links from refreshing page
 
+let changeColor = document.querySelector(".intro h2");
+changeColor.addEventListener("mousedown", () => {
+  changeColor.style.color = 'blue';
+});//Changes the color of Welcome to Fun Bus when mouse is clicked/held down on the text
+
+let changeColor2 = document.querySelector(".intro p");
+changeColor2.addEventListener("mouseup", () => {
+  changeColor2.style.color = 'orange';
+});//Changes the color of intro paragraph to orange when you let go of the mouse
